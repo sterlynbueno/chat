@@ -1,7 +1,6 @@
 
 const ChatFeed =()=>{
-console.log(props);
-
+console.log(props);const chat = chats && chats[activeChat];
 
 return (
     <div>
