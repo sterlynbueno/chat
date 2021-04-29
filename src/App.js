@@ -12,9 +12,9 @@ const App = () => {
         userName="javascriptmastery"
         userSecret="123123"
         renderChatFeed={(chatAppProps)=> <ChatFeed {...chatAppProps }
-        />
-
+        /> 
     );
-}
+        
+};
 
 export default App;
