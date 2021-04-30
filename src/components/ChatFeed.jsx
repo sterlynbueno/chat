@@ -32,8 +32,11 @@ const renderMessages = () => {
             {renderReadReceipts(message, isMyMessage)}
           </div>
                   </div>
-    })
+            
+})
 }
+
+if (!chat) return 'Loading...';
 
 return (
     <div className="Chat-Feed">
