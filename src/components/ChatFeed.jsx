@@ -36,8 +36,13 @@ const renderMessages = () => {
 }
 
 return (
-    <div>
-        ChatFeed
+    <div className="Chat-Feed">
+        <div className="chat-title-container">
+        <div className="chat-title">{chat?.title}</div>
+        <div className="chat-subtitle"></div>
+   
+        {chat.people.map((person) => ` ${person.person.username}`)}
+    
     </div>
 );
 }
