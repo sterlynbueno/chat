@@ -1,9 +1,6 @@
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
-
-importar  MessageForm  from  './MessageForm' ;
-importar  MyMessage  from  './MyMessage' ;
-importar  TheirMessage  from  './TheirMessage' ;
+import MessageForm from './MessageForm';
 
 const  ChatFeed  =  ( props )  =>  {
     const  { chats , activeChat , userName , messages }  =  props ;
@@ -33,9 +30,10 @@ const renderMessages = () => {
           </div>
                   </div>
             
-})
-}
-
+            );
+        });
+      };
+    
 if (!chat) return 'Loading';
 
 return (
