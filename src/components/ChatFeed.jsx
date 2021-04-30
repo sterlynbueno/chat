@@ -53,7 +53,9 @@ return (
       </div>
     </div>  
     
-}
+    );
+};
+
 export default ChatFeed;
 
 
