@@ -15,6 +15,12 @@ const LoginForm = () => {
           <form onSubmit={handleSubmit}>
               <imput type="text" value= {username} onChange={(e) => setUsername(e.target.value)} className="imput" placeholder="Username" required />
               <imput type="password" value= {password} onChange={(e) => setPassword(e.target.value)} className="imput" placeholder="password" required />
+              
+<div align="center">
+    <button type="submit" className="button">
+        </button>
+    </div>
+
               </form>
               </div>
               </div>
