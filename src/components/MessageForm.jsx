@@ -11,8 +11,8 @@ return (
 
     }
     return(
-        <div>
-            MessageForm
+        <div className="message" style={{float: 'right', marginRight: '128px', color: 'white' , backgroundColor: '#3B2A50' }}>
+            {Message.text}
         </div>
     );
 }
