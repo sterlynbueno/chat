@@ -48,7 +48,9 @@ const MessageForm = (props) => {
         style={{ display: 'none' }}
         onChange={handleUpload.bind(this)}
       />
-      
+      <button type="submit" className="send-button">
+        <SendOutlined className="send-icon" />
+      </button>
       
     </form>
   );
