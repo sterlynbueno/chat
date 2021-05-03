@@ -13,7 +13,8 @@ const LoginForm = () => {
           <div className="form">
           <h1 className= "title"> chat application </h1>
           <form onSubmit={handleSubmit}>
-              <imput type="text" value= {username} onChange={} />
+              <imput type="text" value= {username} onChange={(e) => setUsername(e.target.value)} className="imput" placeholder="Username" required />
+              <imput type="password" value= {password} onChange={(e) => setPassword(e.target.value)} className="imput" placeholder="password" required />
               </form>
               </div>
               </div>
