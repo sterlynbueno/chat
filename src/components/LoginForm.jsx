@@ -20,7 +20,7 @@ localStorage.setItem('password', password);
 
 window.location.reload();
 } catch (error){
-    setError('Oops, incorrect credentials.')
+    setError('Oops, los datos son incorrectos')
 }
 
 
