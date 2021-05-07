@@ -9,7 +9,7 @@ const LoginForm = () => {
   const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefaut();
+    e.preventDefault();
 
     const authObject = {
       "Project-ID": projectID,
@@ -26,7 +26,7 @@ const LoginForm = () => {
       localStorage.setItem("password", password);
 
       window.location.reload();
-    } catch (err) {
+    } catch (error) {
       setError("Oops, los datos son incorrectos");
     }
   };
