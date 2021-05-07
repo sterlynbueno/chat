@@ -8,7 +8,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const authObject = { 'Project-ID': "6419cb30-a0fe-4603-988b-8ca547f207ce", 'User-Name': username, 'Use-Secret': password };
+        const authObject = { 'Project-ID': "c2c0514f-07f1-497c-acc4-a77b945731ad", 'User-Name': username, 'Use-Secret': password };
 
 try {
 
@@ -19,6 +19,7 @@ localStorage.setItem('password', password);
 
 
 window.location.reload();
+
 } catch (error){
     setError('Oops, los datos son incorrectos')
 }
@@ -35,8 +36,8 @@ window.location.reload();
               <imput type="text" value= {username} onChange={(e) => setUsername(e.target.value)} className="imput" placeholder="Username" required />
               <imput type="password" value= {password} onChange={(e) => setPassword(e.target.value)} className="imput" placeholder="password" required />
               
-<div align="center">
-    <button type="submit" className="button">
+               <div align="center">
+      <button type="submit" className="button">
         <span>Start Chatting</span>
         </button>
     </div>
@@ -48,4 +49,4 @@ window.location.reload();
 
 }
 
-export default LoginForm; // Ojo con el punto y coma
+export default LoginForm;
