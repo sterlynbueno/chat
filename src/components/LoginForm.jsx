@@ -26,7 +26,7 @@ const LoginForm = () => {
       localStorage.setItem("password", password);
 
       window.location.reload();
-    } catch (error) {
+    } catch (err) {
       setError("Oops, los datos son incorrectos");
     }
   };
