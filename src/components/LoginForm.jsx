@@ -1,46 +1,42 @@
 import { useState } from 'react';
 import axios from 'axios';
 const LoginForm = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+ const [username, setUsername] = useState('');
+ const [password, setPassword] = useState('');
+ const [error, setError] = useState('');
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+const handleSubmit = async (e) => {
+   e.preventDefaut();
 
-        const authObject = { 'Project-ID': "c2c0514f-07f1-497c-acc4-a77b945731ad", 'User-Name': username, 'Use-Secret': password };
+   const authObject = {'Project-ID': "c2c0514f-07f1-497c-acc4-a77b945731ad", 'User-Name': username, 'User-Secret': password};
 
-try {
+   try { 
+   await axios.get('https://api.chatengine.io/chats', { headers: authObject});
+   
+   localStorage.setItem('username', username);
+   localStorage.setItem('password', password);
 
-await axios.get('https://api.chatengine.io/chats', { headers:authObject });
-
-localStorage.setItem('username', username);
-localStorage.setItem('password', password);
-
-
-window.location.reload();
-
+   window.location.reload();
 } catch (error){
+
     setError('Oops, los datos son incorrectos')
 }
+}
+ return (
+<div className="wrapper">
+    <div className="form">
+        <h1 className="title"> CHAT</h1>
+        <form onSubmit={ handleSubmit}>
+<input type = "text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required/>
+<input type = "text" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required/>
 
+        <div align="center">
 
+            <button type="submit" className="button" >
+                <span>EMPEZEMOs EL CHAT</span>
+            </button>
 
-    }
-
-  return(
-      <div className ="wrapper">
-          <div className="form">
-          <h1 className= "title"> chat application </h1>
-          <form onSubmit={handleSubmit}>
-              <imput type="text" value= {username} onChange={(e) => setUsername(e.target.value)} className="imput" placeholder="Username" required />
-              <imput type="password" value= {password} onChange={(e) => setPassword(e.target.value)} className="imput" placeholder="password" required />
-              
-               <div align="center">
-      <button type="submit" className="button">
-        <span>Start Chatting</span>
-        </button>
-    </div>
+            </div>
 <h2  className="error">{error}</h2>
               </form>
               </div>
