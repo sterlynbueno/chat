@@ -85,13 +85,13 @@
   }
   
   .chat-title {
-    color: #b2d82a;
+    color: #161d6f;
     font-weight: 800;
     font-size: 24px;
   }
   
   .chat-subtitle {
-    color: #1a690a;
+    color: #98ded9;
     font-weight: 600;
     font-size: 10px;
     padding-top: 4px;
@@ -163,7 +163,7 @@
     bottom: 0px;
     width: calc(100% - 36px);
     padding: 18px;
-    background-color: rgb(18, 248, 37);
+    background-color: #c7ffd8;
   }
   
   .message-form {
