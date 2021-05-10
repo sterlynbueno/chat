@@ -1,11 +1,11 @@
 
-## Hola chic@s👋, ¡gracias por pasar! Somos un pequeño grupo de CEMAS 6toB Informática🖥️⌨️💻Recientemente estamos creando un proyecto de Aplicación de chat con React JS: 📱compilación e implementación❄ espero que nuestro proyecto sea de su agrado✨.
+## Hola chic@s👋, ¡gracias por pasar! Somos un pequeño grupo de CEMAS 6toB Informática🖥️⌨️💻Recientemente estamos creando un proyecto de una Aplicación de chat con React JS: 📱compilación e implementación espero que nuestro proyecto sea de su agrado✨.
 
 
 ____________________
 
 
-## ____Los integrantes del este equipo son:______
+## ____Los integrantes del equipo son:______
 * Sterlyn Bueno         como Lider👧🏻
 * Edward Añon           como Miembro Colaborador👨‍🦰
 * Marileidy Castillo    como Miembro Colaborador👩‍🦰
